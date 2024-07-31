@@ -7,7 +7,7 @@
 - [ ] reduce the resources needed for an application
 - [ ] build a less complex application
 
-⭐ Threads enable concurrent execution, improving performance by running multiple tasks simultaneously, utilizing multiple cores efficiently.
+➡️ Threads enable concurrent execution, improving performance by running multiple tasks simultaneously, utilizing multiple cores efficiently.
 
 ##
 
@@ -26,11 +26,12 @@
 #### Q.3 one strategy to keep file writes atomic is to 
 
 - [ ] configure appropriate  system settings such as KEEP_FILE_WRITE_ATOMIC
-- [ ] write to a temporary  file, then rename the temporary file to the  original file via the system setting
+- [x] write to a temporary  file, then rename the temporary file to the  original file via the system setting
 - [ ] use a write-through cache to store the file until it can be written automatically
 - [ ] write a file once read it back  and then rewrite it 
 - [ ] concatenate the new file to the existing file 
 
+➡️  The option that best ensures atomicity in file writes is writing to a temporary file and then renaming it to the original file name.
 
 ##
 
@@ -42,8 +43,20 @@
 - [ ] Use asynchronous messaging to send and receive messages between each microservice
 - [ ] Abandon the microservice architecture so no interaction is needed
 
+➡️ Using RESTful APIs with POST and GET allows for simple, stateless, and scalable communication. Polling with GET requests avoids blocking threads, making it suitable for non-blocking, asynchronous interactions between microservices.
 
 ##
 
-#### Q.5 You need to built  
+#### Q.5 you need to build out an application that will integrate with multiple third party services, each with it's own unique API. It is Possible more service  be added later.
 
+- [x] create a separate interface for each third-party service that contains the respective configurations.
+- [ ] Have a single interface where the configuration are passed as method paramenter
+- [ ] Design the solution so that the only one-third party service is used 
+- [ ] Create a large integration service that will handle everything
+- [ ] use thid partty service that don't require configuration 
+
+➡️ The best approach would be to create a separate interface for each third-party service that contains the respective configurations. This will allow for scalability and flexibility in accommodating future services.
+
+##
+
+#### Q.6
