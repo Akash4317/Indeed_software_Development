@@ -23,7 +23,7 @@
 
 ##
 
-#### Q.3 one strategy to keep file writes atomic is to 
+#### Q3. one strategy to keep file writes atomic is to 
 
 - [ ] configure appropriate  system settings such as KEEP_FILE_WRITE_ATOMIC
 - [x] write to a temporary  file, then rename the temporary file to the  original file via the system setting
@@ -47,7 +47,7 @@
 
 ##
 
-#### Q.5 you need to build out an application that will integrate with multiple third party services, each with it's own unique API. It is Possible more service  be added later.
+#### Q5. you need to build out an application that will integrate with multiple third party services, each with it's own unique API. It is Possible more service  be added later.
 
 - [x] create a separate interface for each third-party service that contains the respective configurations.
 - [ ] Have a single interface where the configuration are passed as method paramenter
@@ -59,7 +59,7 @@
 
 ##
 
-#### Q.6  Q1. Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: C
+#### Q6.  Q1. Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: C
 
 ```
       // copy a string from the original to the destination
@@ -84,7 +84,7 @@
 ##
 
 
-#### Q.7 check string to verify it consists of only lower-case alpha characters.  Language: C
+#### Q7. check string to verify it consists of only lower-case alpha characters.  Language: C
 
 ```
 
@@ -111,7 +111,7 @@ bool is_lowercase(const char *string) {
 
 ##
 
-#### Q.8 What value is printed out?  Language: C
+#### Q8. What value is printed out?  Language: C
 
 ```
 int[,] matrix = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 0 } };
@@ -141,7 +141,7 @@ So, the value printed out by the program is 126.
 
 ##
 
-#### Q.9 What's wrong with this code? Language: Java
+#### Q9. What's wrong with this code? Language: Java
 
 ```
  public int doThings(String numberString) {
@@ -164,7 +164,7 @@ So, the value printed out by the program is 126.
 
 ##
 
-#### Q.10 What value is printed? Language: JavaScript
+#### Q10. What value is printed? Language: JavaScript
 
 ```
 function f(x) {
@@ -243,7 +243,7 @@ console.log(g);
 
 ##
 
-#### Q13. What does this method return? Language: Java
+#### Q.13 What does this method return? Language: Java
 
 ```
  public List<Integer> someFunction(final List<Integer> numbers) {
@@ -262,3 +262,21 @@ console.log(g);
 - [ ] The same list
 
 ➡️ This code reverses a given list of integers. It iterates through the list from the end to the beginning and adds each element to a new list, which is then returned.
+
+##
+
+#### Q.14 Complete the function shown below by replacing # INSERT MISSING CODE with the correct line of code. Language: Python
+
+```
+ # find the count of odd numbers and
+        # the smallest odd number in a list
+        def get_smallest_odd(numlist):
+            oddcount = 0
+            smallest = float('inf')
+            for num in numlist:
+                if (num % 2) != 0:
+                    oddcount += 1
+                    if num < smallest:
+                        # INSERT MISSING CODE
+            return oddcount, smallest
+```
