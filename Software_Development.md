@@ -59,4 +59,54 @@
 
 ##
 
-#### Q.6
+#### Q.6  Q1. Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: C
+
+```
+      // copy a string from the original to the destination
+        // and return the number of characters copied
+        int mystrcpy(char *destination, char *original) {
+            int count = 0;
+            while (*original != '\0') {
+                *destination++ = *original++;
+                // INSERT MISSING CODE
+            }
+            *destination = *original;
+            return count;
+        }
+```
+
+- [ ] original++;
+- [x] count++;
+- [ ] destination++;
+
+➡️ To count the number of characters copied, insert (count++;) inside the while loop. This will increment count for each character copied from original to destination.
+
+##
+
+
+#### Q.7 check string to verify it consists of only lower-case alpha characters.  Language: C
+
+```
+
+#include <stdbool.h>
+
+bool is_lowercase(const char *string) {
+    char *p = string;
+    do {
+        if ((*p < 'a' || *p > 'z')
+            && *p != '\0') {
+            // INSERT MISSING CODE
+        }
+    } while (*p++ != '\0');
+    return true;
+}
+
+```
+- [x] return false;
+- [ ] return true;
+- [ ] break;
+- [ ] continue;
+
+➡️ The if condition checks if the current character is not within the range of lowercase letters ('a' to 'z') and is not the null terminator.If the condition is met (i.e., a non-lowercase character is found), the function should immediately return false because the string does not consist only of lowercase letters.
+
+##
