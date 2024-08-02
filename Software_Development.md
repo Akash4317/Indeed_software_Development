@@ -59,7 +59,7 @@
 
 ##
 
-#### Q6.  Q1. Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: C
+#### Q.6 Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: C
 
 ```
       // copy a string from the original to the destination
@@ -84,7 +84,7 @@
 ##
 
 
-#### Q7. check string to verify it consists of only lower-case alpha characters.  Language: C
+#### Q.7 check string to verify it consists of only lower-case alpha characters.  Language: C
 
 ```
 
@@ -111,7 +111,7 @@ bool is_lowercase(const char *string) {
 
 ##
 
-#### Q8. What value is printed out?  Language: C
+#### Q.8 What value is printed out?  Language: C
 
 ```
 int[,] matrix = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 0 } };
@@ -141,7 +141,7 @@ So, the value printed out by the program is 126.
 
 ##
 
-#### Q9. What's wrong with this code? Language: Java
+#### Q.9 What's wrong with this code? Language: Java
 
 ```
  public int doThings(String numberString) {
@@ -164,7 +164,7 @@ So, the value printed out by the program is 126.
 
 ##
 
-#### Q10. What value is printed? Language: JavaScript
+#### Q.10 What value is printed? Language: JavaScript
 
 ```
 function f(x) {
@@ -191,7 +191,7 @@ console.log(g);
 
 ##
 
-#### Q11. What does the function someFunction() perform? Language: Java
+#### Q.11 What does the function someFunction() perform? Language: Java
 
     ```
         public Node someFunction(Node root, int key) {
@@ -217,7 +217,7 @@ console.log(g);
 
  ##  
 
- #### Q12. Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: JavaScript
+ #### Q.12 Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: JavaScript
 
     ```
         function findLargestIndex(theArray) {
@@ -280,3 +280,14 @@ console.log(g);
                         # INSERT MISSING CODE
             return oddcount, smallest
 ```
+- [ ] break
+- [x] smallest = num
+- [ ] num = smallest
+- [ ] smallest = smallest + 1
+- [ ] smallest = oddcount
+
+➡️ The function checks if the number is odd (num % 2 != 0).If the number is odd, it increments the oddcount.It then compares the odd number (num) with smallest. If num is smaller, it updates smallest with this value. so the missing code will be smallest  = num.
+
+##
+
+#### Q.15 
