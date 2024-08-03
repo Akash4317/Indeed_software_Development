@@ -187,14 +187,14 @@ console.log(g);
 - [ ] z-y-a
 - [ ] z-y-b
 
-➡️ first call x become x-a return updated x.  second call y become y-x-a return updated y and in third call z becomes z-y-x-a.So, the value printed is "z-y-x-a".
+➡️ first call x become x-a return updated x.  second call y become y-x-a return updated y and in third call z becomes z-y-x-a.So, the value printed is "z-y-x-a". This concept in known as  currying in Javascript 👉  https://www.geeksforgeeks.org/what-is-currying-function-in-javascript/
 
 ##
 
 #### Q.11 What does the function someFunction() perform? Language: Java
 
-    ```
-        public Node someFunction(Node root, int key) {
+```
+ public Node someFunction(Node root, int key) {
             if (root == null || root.key == key) {
                 return root;
             }
@@ -205,7 +205,7 @@ console.log(g);
 
             return someFunction(root.right, key)
         }
-    ```
+```
 
 - [x] Searches through a binary tree for a value
 - [ ] Checks to find null values in a binary tree
@@ -219,8 +219,8 @@ console.log(g);
 
  #### Q.12 Complete the function shown below by replacing // INSERT MISSING CODE with the correct line of code. Language: JavaScript
 
-    ```
-        function findLargestIndex(theArray) {
+```
+function findLargestIndex(theArray) {
             index = 0;
             largestValue = theArray[0];
             for (i = 0; i < theArray.length; i++) {
@@ -231,7 +231,7 @@ console.log(g);
             }
             return index;
         }
-    ```
+```
 
 - [x] largestValue = theArray[i];
 - [ ] continue;
@@ -290,4 +290,26 @@ console.log(g);
 
 ##
 
-#### Q.15 
+#### Q.15 Which input would return a value of true? Language: Java
+
+  ```
+ public boolean isSpecial(String text) {
+            String tempText = alterText(text);
+            return text.equals(tempText);
+        }
+
+        public String alterText(String inputText) {
+            if(inputText == null || inputText.isEmpty()) {
+                return inputText;
+            }
+            return inputText.charAt(inputText.length() - 1) + alterText(inputText.substring(0, inpuText.length() - 1));
+        }
+```
+
+- [x] "ab1221ba"
+- [ ] "aaabbb"
+- [ ] "abcdef"
+- [ ] "abcd4321"
+- [ ] "a1a1b2"
+
+➡️ The alterText method recursively calls itself with the substring of inputText excluding the last character and concatenates the last character to the result of this recursive call. In Short this whole code (isSpecial) method checks if the input string is a palindrome. so in te given options we have only ab1221ba which is palindrome.
