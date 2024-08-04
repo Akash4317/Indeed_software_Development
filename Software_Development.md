@@ -81,6 +81,9 @@
 
 ➡️ To count the number of characters copied, insert (count++;) inside the while loop. This will increment count for each character copied from original to destination.
 
+⭐ **Time Complexity**: `O(n)` because the function iterates through each character of the `original` string once; <br>
+⭐ **Space Complexity**: `O(1)` because it is not using any extra space regardless of the input size;
+
 ##
 
 
@@ -108,6 +111,9 @@ bool is_lowercase(const char *string) {
 - [ ] continue;
 
 ➡️ The if condition checks if the current character is not within the range of lowercase letters ('a' to 'z') and is not the null terminator.If the condition is met (i.e., a non-lowercase character is found), the function should immediately return false because the string does not consist only of lowercase letters.
+
+⭐ **Time Complexity**: `O(n)` because the function iterates through each character of string once; <br>
+⭐ **Space Complexity**: `O(1)` because it is not using any extra space regardless of the input size;
 
 ##
 
@@ -138,6 +144,10 @@ Console.WriteLine(sum);
 Second row: {4, 5, 6} Initial product = 4 Product after multiplying by 5 = 4 * 5 = 20 Product after multiplying by 6 = 20 * 6 = 120 Sum after second row = 6 + 120 = 126
 Third row: {7, 8, 0} Initial product = 7 Product after multiplying by 8 = 7 * 8 = 56 Product after multiplying by 0 = 56 * 0 = 0 Sum after third row = 126 + 0 = 126
 So, the value printed out by the program is 126.
+
+⭐ **Time Complexity**: `O(m * n)` because the function iterates through each element of the matrix once worst case it would be `O(n^2)` in case rows and columns are of same size ; <br>
+⭐ **Space Complexity**: `O(1)` because it uses a constant amount of extra space regardless of the matrix size.
+
 
 ##
 
@@ -189,6 +199,10 @@ console.log(g);
 
 ➡️ first call x become x-a return updated x.  second call y become y-x-a return updated y and in third call z becomes z-y-x-a.So, the value printed is "z-y-x-a". This concept in known as  currying in Javascript 👉  https://www.geeksforgeeks.org/what-is-currying-function-in-javascript/
 
+⭐ **Time Complexity**: `O(1)` because each function call performs a constant amount of work;<br> 
+⭐ **Space Complexity**: `O(1)` because it uses a constant amount of extra space for variables and closures regardless of the input size.
+
+
 ##
 
 #### Q.11 What does the function someFunction() perform? Language: Java
@@ -214,6 +228,10 @@ console.log(g);
 - [ ] Throws an uncaught exception on all calls
 
  ➡️ This code performs a binary search on a binary search tree (BST) to find and return the node with the specified key. It recursively traverses the left or right subtree based on the comparison of the current node's key with the target key.
+
+ ⭐ **Time Complexity**: `O(h)`, where `h` is the height of the tree; <br>
+ ⭐ **Space Complexity**: `O(h)` due to the recursion stack depth, which in the worst case equals the height of the tree.
+
 
  ##  
 
@@ -241,6 +259,10 @@ function findLargestIndex(theArray) {
 
 ➡️ The missing code should update the largestValue to the current largest element found in the array. This ensures that the comparison in subsequent iterations is always against the largest value encountered so far
 
+⭐ **Time Complexity**: `O(n)` because the function iterates through each element of the array once;<br>
+⭐ **Space Complexity**: `O(1)` because it uses a constant amount of extra space regardless of the input size.
+
+
 ##
 
 #### Q.13 What does this method return? Language: Java
@@ -262,6 +284,10 @@ function findLargestIndex(theArray) {
 - [ ] The same list
 
 ➡️ This code reverses a given list of integers. It iterates through the list from the end to the beginning and adds each element to a new list, which is then returned.
+
+⭐ **Time Complexity**: `O(n)` because the function iterates through the list once to reverse it;<br> 
+⭐ **Space Complexity**: `O(n)` because it creates a new list to store the reversed elements.
+
 
 ##
 
@@ -288,6 +314,10 @@ function findLargestIndex(theArray) {
 
 ➡️ The function checks if the number is odd (num % 2 != 0).If the number is odd, it increments the oddcount.It then compares the odd number (num) with smallest. If num is smaller, it updates smallest with this value. so the missing code will be smallest  = num.
 
+⭐ **Time Complexity**: `O(n)` because the function iterates through each element of the list once;<br> 
+⭐ **Space Complexity**: `O(1)` because it is not using any extra space.
+
+
 ##
 
 #### Q.15 Which input would return a value of true? Language: Java
@@ -313,3 +343,6 @@ function findLargestIndex(theArray) {
 - [ ] "a1a1b2"
 
 ➡️ The alterText method recursively calls itself with the substring of inputText excluding the last character and concatenates the last character to the result of this recursive call. In Short this whole code (isSpecial) method checks if the input string is a palindrome. so in te given options we have only ab1221ba which is palindrome.
+
+⭐ **Time Complexity**: `O(n^2)` due to the recursion and string manipulations in `alterText`; <br>
+⭐ **Space Complexity**: `O(n^2)` due to the recursion stack and intermediate string creations.
